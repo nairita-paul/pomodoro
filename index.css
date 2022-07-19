@@ -1,0 +1,62 @@
+:root {
+  --orange: rgb(217, 85, 80);
+  --orange-dark: #c0392b;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--orange);
+  height: 600px;
+  width: 800px;
+  margin: auto;
+}
+.btn {
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.app-state-btn {
+  color: white;
+  background-color: transparent;
+  border: none;
+  padding: 20px 30px;
+}
+
+.app-state-btn:focus,
+.app-state-btn:hover {
+  background-color: var(--orange-dark);
+}
+
+.play-btn,
+.skip-btn {
+  border: none;
+  color: var(--orange);
+  background-color: white;
+  padding: 20px 50px;
+  border-radius: 3px;
+}
+
+
+.play-btn:hover,
+.skip-btn:hover {
+  background-color: #ecf0f1;
+}
+.skip-btn {
+  display: none;
+}
+
+#timer {
+    color: white;
+    font-size: 150px;
+    font-weight: 900;
+}
